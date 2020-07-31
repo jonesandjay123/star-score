@@ -35,32 +35,32 @@
 <body>
     <div class=divpattern id=star_div>
     <h1>評分表</h1>
-    <img id="idimg" src="Images/star.gif" />
-    <img id="idimg2" src="Images/star.gif" />
-    <img id="idimg3" src="Images/star.gif" />
-    <img id="idimg4" src="Images/star.gif" />
-    <img id="idimg5" src="Images/star.gif" />
+    <img id="idimg" src="Images/star.gif" width="50" />
+    <img id="idimg2" src="Images/star.gif" width="50" />
+    <img id="idimg3" src="Images/star.gif" width="50"/>
+    <img id="idimg4" src="Images/star.gif" width="50" />
+    <img id="idimg5" src="Images/star.gif" width="50"/>
     <p id= "p">請評分...</p>
     </div>
-    
-    <script>        
+
+    <script>
         document.querySelector("#idimg").onmouseover=mouseover;
-        document.querySelector("#idimg").onmouseout=mouseout; 
-        document.querySelector("#idimg").onclick=click; 
+        document.querySelector("#idimg").onmouseout=mouseout;
+        document.querySelector("#idimg").onclick=click;
         document.querySelector("#idimg2").onmouseover=mouseover2;
-        document.querySelector("#idimg2").onmouseout=mouseout2; 
+        document.querySelector("#idimg2").onmouseout=mouseout2;
         document.querySelector("#idimg2").onclick=click2;
         document.querySelector("#idimg3").onmouseover=mouseover3;
         document.querySelector("#idimg3").onmouseout=mouseout3;
-        document.querySelector("#idimg3").onclick=click3; 
+        document.querySelector("#idimg3").onclick=click3;
         document.querySelector("#idimg4").onmouseover=mouseover4;
         document.querySelector("#idimg4").onmouseout=mouseout4;
-        document.querySelector("#idimg4").onclick=click4;  
+        document.querySelector("#idimg4").onclick=click4;
         document.querySelector("#idimg5").onmouseover=mouseover5;
         document.querySelector("#idimg5").onmouseout=mouseout5;
-        document.querySelector("#idimg5").onclick=click5; 
-        
-                         
+        document.querySelector("#idimg5").onclick=click5;
+
+
 
         function mouseover() {
             document.querySelector("#idimg").src="Images/chngstar.gif";
@@ -68,7 +68,7 @@
             document.querySelector("#idimg3").src="Images/star.gif";
             document.querySelector("#idimg4").src="Images/star.gif";
             document.querySelector("#idimg5").src="Images/star.gif";
-            document.getElementById("p").innerHTML="打分中...一顆星!"   
+            document.getElementById("p").innerHTML="打分中...一顆星!"
         }
         function mouseout() {
             document.querySelector("#idimg").src="Images/star.gif";
@@ -76,12 +76,12 @@
             document.querySelector("#idimg3").src="Images/star.gif";
             document.querySelector("#idimg4").src="Images/star.gif";
             document.querySelector("#idimg5").src="Images/star.gif";
-            document.getElementById("p").innerHTML="請評分..."    
+            document.getElementById("p").innerHTML="請評分..."
         }
         function click(){
-            document.querySelector("#idimg").src="Images/chngstar.gif"; 
+            document.querySelector("#idimg").src="Images/chngstar.gif";
             document.querySelector("#idimg").addEventListener("mouseout",function(){
-                document.querySelector("#idimg").src="Images/chngstar.gif"; 
+                document.querySelector("#idimg").src="Images/chngstar.gif";
                 document.getElementById("p").innerHTML="一顆星! 再接再厲";
             })
         }
@@ -99,7 +99,7 @@
             document.querySelector("#idimg3").src="Images/star.gif";
             document.querySelector("#idimg4").src="Images/star.gif";
             document.querySelector("#idimg5").src="Images/star.gif";
-            document.getElementById("p").innerHTML="請評分..." 
+            document.getElementById("p").innerHTML="請評分..."
         }
         function click2(){
             document.querySelector("#idimg").src="Images/chngstar.gif";
@@ -124,7 +124,7 @@
             document.querySelector("#idimg3").src="Images/star.gif";
             document.querySelector("#idimg4").src="Images/star.gif";
             document.querySelector("#idimg5").src="Images/star.gif";
-            document.getElementById("p").innerHTML="請評分..." 
+            document.getElementById("p").innerHTML="請評分..."
         }
         function click3(){
             document.querySelector("#idimg").src="Images/chngstar.gif";
@@ -151,7 +151,7 @@
             document.querySelector("#idimg3").src="Images/star.gif";
             document.querySelector("#idimg4").src="Images/star.gif";
             document.querySelector("#idimg5").src="Images/star.gif";
-            document.getElementById("p").innerHTML="請評分..." 
+            document.getElementById("p").innerHTML="請評分..."
         }
         function click4(){
             document.querySelector("#idimg").src="Images/chngstar.gif";
@@ -180,7 +180,7 @@
             document.querySelector("#idimg3").src="Images/star.gif";
             document.querySelector("#idimg4").src="Images/star.gif";
             document.querySelector("#idimg5").src="Images/star.gif";
-            document.getElementById("p").innerHTML="請評分..." 
+            document.getElementById("p").innerHTML="請評分..."
         }
         function click5(){
             document.querySelector("#idimg").src="Images/chngstar.gif";
