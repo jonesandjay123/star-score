@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+<head>
+    <meta charset="UTF-8">
+    <title>Star JavaScript</title>
+    <style>
+        * {
+            font-family: 微軟正黑體;
+            font-size: 20px;
+            margin: 0px;
+            padding: 0px;
+            background-color: #FFFFAA;
+        }
+        .divpattern{
+            margin-top: 300px;
+            margin-left: 450px;
+            width: 680px;
+        }
+        h1{
+            font-size: 30px;
+            text-align: center;
+            color:#3C3C3C;
+            padding: 24px;
+        }
+        img{
+            cursor: pointer;
+        }
+        p{
+            text-align: center;
+            color: #FF2D2D;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class=divpattern id=star_div>
+    <h1>評分表</h1>
+    <img id="idimg" src="Images/star.gif" />
+    <img id="idimg2" src="Images/star.gif" />
+    <img id="idimg3" src="Images/star.gif" />
+    <img id="idimg4" src="Images/star.gif" />
+    <img id="idimg5" src="Images/star.gif" />
+    <p id= "p">請評分...</p>
+    </div>
+    
+    <script>        
+        document.querySelector("#idimg").onmouseover=mouseover;
+        document.querySelector("#idimg").onmouseout=mouseout; 
+        document.querySelector("#idimg").onclick=click; 
+        document.querySelector("#idimg2").onmouseover=mouseover2;
+        document.querySelector("#idimg2").onmouseout=mouseout2; 
+        document.querySelector("#idimg2").onclick=click2;
+        document.querySelector("#idimg3").onmouseover=mouseover3;
+        document.querySelector("#idimg3").onmouseout=mouseout3;
+        document.querySelector("#idimg3").onclick=click3; 
+        document.querySelector("#idimg4").onmouseover=mouseover4;
+        document.querySelector("#idimg4").onmouseout=mouseout4;
+        document.querySelector("#idimg4").onclick=click4;  
+        document.querySelector("#idimg5").onmouseover=mouseover5;
+        document.querySelector("#idimg5").onmouseout=mouseout5;
+        document.querySelector("#idimg5").onclick=click5; 
+        
+                         
+
+        function mouseover() {
+            document.querySelector("#idimg").src="Images/chngstar.gif";
+            document.querySelector("#idimg2").src="Images/star.gif";
+            document.querySelector("#idimg3").src="Images/star.gif";
+            document.querySelector("#idimg4").src="Images/star.gif";
+            document.querySelector("#idimg5").src="Images/star.gif";
+            document.getElementById("p").innerHTML="打分中...一顆星!"   
+        }
+        function mouseout() {
+            document.querySelector("#idimg").src="Images/star.gif";
+            document.querySelector("#idimg2").src="Images/star.gif";
+            document.querySelector("#idimg3").src="Images/star.gif";
+            document.querySelector("#idimg4").src="Images/star.gif";
+            document.querySelector("#idimg5").src="Images/star.gif";
+            document.getElementById("p").innerHTML="請評分..."    
+        }
+        function click(){
+            document.querySelector("#idimg").src="Images/chngstar.gif"; 
+            document.querySelector("#idimg").addEventListener("mouseout",function(){
+                document.querySelector("#idimg").src="Images/chngstar.gif"; 
+                document.getElementById("p").innerHTML="一顆星! 再接再厲";
+            })
+        }
+        function mouseover2(){
+            document.querySelector("#idimg").src="Images/chngstar.gif";
+            document.querySelector("#idimg2").src="Images/chngstar.gif";
+            document.querySelector("#idimg3").src="Images/star.gif";
+            document.querySelector("#idimg4").src="Images/star.gif";
+            document.querySelector("#idimg5").src="Images/star.gif";
+            document.getElementById("p").innerHTML="打分中...兩顆星!!"
+        }
+        function mouseout2(){
+            document.querySelector("#idimg").src="Images/star.gif";
+            document.querySelector("#idimg2").src="Images/star.gif";
+            document.querySelector("#idimg3").src="Images/star.gif";
+            document.querySelector("#idimg4").src="Images/star.gif";
+            document.querySelector("#idimg5").src="Images/star.gif";
+            document.getElementById("p").innerHTML="請評分..." 
+        }
+        function click2(){
+            document.querySelector("#idimg").src="Images/chngstar.gif";
+            document.querySelector("#idimg2").src="Images/chngstar.gif";
+            document.querySelector("#idimg2").addEventListener("mouseout",function(){
+                document.querySelector("#idimg").src="Images/chngstar.gif";
+                document.querySelector("#idimg2").src="Images/chngstar.gif";
+                document.getElementById("p").innerHTML="兩顆星!! 加油";
+            })
+        }
+        function mouseover3(){
+            document.querySelector("#idimg").src="Images/chngstar.gif";
+            document.querySelector("#idimg2").src="Images/chngstar.gif";
+            document.querySelector("#idimg3").src="Images/chngstar.gif";
+            document.querySelector("#idimg4").src="Images/star.gif";
+            document.querySelector("#idimg5").src="Images/star.gif";
+            document.getElementById("p").innerHTML="打分中...三顆星!!!"
+        }
+        function mouseout3(){
+            document.querySelector("#idimg").src="Images/star.gif";
+            document.querySelector("#idimg2").src="Images/star.gif";
+            document.querySelector("#idimg3").src="Images/star.gif";
+            document.querySelector("#idimg4").src="Images/star.gif";
+            document.querySelector("#idimg5").src="Images/star.gif";
+            document.getElementById("p").innerHTML="請評分..." 
+        }
+        function click3(){
+            document.querySelector("#idimg").src="Images/chngstar.gif";
+            document.querySelector("#idimg2").src="Images/chngstar.gif";
+            document.querySelector("#idimg3").src="Images/chngstar.gif";
+            document.querySelector("#idimg3").addEventListener("mouseout",function(){
+                document.querySelector("#idimg").src="Images/chngstar.gif";
+                document.querySelector("#idimg2").src="Images/chngstar.gif";
+                document.querySelector("#idimg3").src="Images/chngstar.gif";
+                document.getElementById("p").innerHTML="三顆星!!! 普普通通";
+            })
+        }
+        function mouseover4(){
+            document.querySelector("#idimg").src="Images/chngstar.gif";
+            document.querySelector("#idimg2").src="Images/chngstar.gif";
+            document.querySelector("#idimg3").src="Images/chngstar.gif";
+            document.querySelector("#idimg4").src="Images/chngstar.gif";
+            document.querySelector("#idimg5").src="Images/star.gif";
+            document.getElementById("p").innerHTML="打分中...四顆星!!!!"
+        }
+        function mouseout4(){
+            document.querySelector("#idimg").src="Images/star.gif";
+            document.querySelector("#idimg2").src="Images/star.gif";
+            document.querySelector("#idimg3").src="Images/star.gif";
+            document.querySelector("#idimg4").src="Images/star.gif";
+            document.querySelector("#idimg5").src="Images/star.gif";
+            document.getElementById("p").innerHTML="請評分..." 
+        }
+        function click4(){
+            document.querySelector("#idimg").src="Images/chngstar.gif";
+            document.querySelector("#idimg2").src="Images/chngstar.gif";
+            document.querySelector("#idimg3").src="Images/chngstar.gif";
+            document.querySelector("#idimg4").src="Images/chngstar.gif";
+            document.querySelector("#idimg4").addEventListener("mouseout",function(){
+                document.querySelector("#idimg").src="Images/chngstar.gif";
+                document.querySelector("#idimg2").src="Images/chngstar.gif";
+                document.querySelector("#idimg3").src="Images/chngstar.gif";
+                document.querySelector("#idimg4").src="Images/chngstar.gif";
+                document.getElementById("p").innerHTML="四顆星!!!! 不錯哦";
+            })
+        }
+        function mouseover5(){
+            document.querySelector("#idimg").src="Images/chngstar.gif";
+            document.querySelector("#idimg2").src="Images/chngstar.gif";
+            document.querySelector("#idimg3").src="Images/chngstar.gif";
+            document.querySelector("#idimg4").src="Images/chngstar.gif";
+            document.querySelector("#idimg5").src="Images/chngstar.gif";
+            document.getElementById("p").innerHTML="打分中...五顆星!!!!!"
+        }
+        function mouseout5(){
+            document.querySelector("#idimg").src="Images/star.gif";
+            document.querySelector("#idimg2").src="Images/star.gif";
+            document.querySelector("#idimg3").src="Images/star.gif";
+            document.querySelector("#idimg4").src="Images/star.gif";
+            document.querySelector("#idimg5").src="Images/star.gif";
+            document.getElementById("p").innerHTML="請評分..." 
+        }
+        function click5(){
+            document.querySelector("#idimg").src="Images/chngstar.gif";
+            document.querySelector("#idimg2").src="Images/chngstar.gif";
+            document.querySelector("#idimg3").src="Images/chngstar.gif";
+            document.querySelector("#idimg4").src="Images/chngstar.gif";
+            document.querySelector("#idimg5").src="Images/chngstar.gif";
+            document.querySelector("#idimg5").addEventListener("mouseout",function(){
+                document.querySelector("#idimg").src="Images/chngstar.gif";
+                document.querySelector("#idimg2").src="Images/chngstar.gif";
+                document.querySelector("#idimg3").src="Images/chngstar.gif";
+                document.querySelector("#idimg4").src="Images/chngstar.gif";
+                document.querySelector("#idimg5").src="Images/chngstar.gif";
+                document.getElementById("p").innerHTML="五顆星!!!!! 你好棒";
+            })
+        }
+    </script>
+</body>
+</html>
